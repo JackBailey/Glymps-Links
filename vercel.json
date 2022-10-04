@@ -1,6 +1,6 @@
 {
   "rewrites": [
     {"source":"/", "destination":"/"},
-    {"source":"/:path*", "destination":"https://jackb.link/glymps/:path*"}
+    {"source":"/:path*", "destination":"https://jck.cx/glymps/:path*"}
   ]
 }
