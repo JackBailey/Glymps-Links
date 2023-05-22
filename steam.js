@@ -37,7 +37,7 @@ gamesDiv = document.getElementById("games");
             </div>`
 	}
 
-loadJSON("https://api.glymps.xyz/top" + gamestoList + "games", function(data) {
+loadJSON("https://api.gaming.jackbailey.uk/top" + gamestoList + "games", function(data) {
 
 	console.log(data)
 	games = data;
