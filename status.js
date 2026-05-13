@@ -2,7 +2,6 @@ lastResult = null;
 lastData = {
 	avatar: 0,
 	username: "",
-	discriminator: 0,
 };
 // Credit to https://stackoverflow.com/a/18278346/16367360
 
@@ -37,15 +36,9 @@ function statusUpdater() {
 		}
 		if (lastData.username != data.data.discord_user.username) {
 			username = document.getElementById("username");
-			username.innerHTML = data.data.discord_user.username;
-			lastData.username = data.data.discord_user.username;
+			username.innerHTML = "@" + data.data.discord_user.username;
+			lastData.username = "@" + data.data.discord_user.username;
 		}
-		if (lastData.discriminator != data.data.discord_user.discriminator) {
-			discriminator = document.getElementById("discrim");
-			discriminator.innerHTML = "#" + data.data.discord_user.discriminator;
-			lastData.discriminator = data.data.discord_user.discriminator;
-		}
-
 		if (data != lastResult) {
 			statusText = document.getElementById("status");
 			statusIcon = document.getElementById("status-icon");

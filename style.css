@@ -3,7 +3,6 @@
 :root {
 	--divcolor: rgb(30, 30, 30);
 	--bgcolor: rgb(19, 19, 19);
-	--bodywidth: 60%;
 }
 
 * {
@@ -13,27 +12,35 @@
 	color: white;
 }
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	background: var(--bgcolor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header {
 	background: var(--divcolor);
-	width: var(--bodywidth);
-	margin: 50px auto 25px auto;
-	border-radius: 25px;
+	border-radius: 1.5625rem;
 	display: flex;
 	align-items: center;
 	position: relative;
+	padding: 1.25rem;
+	margin-bottom: 1rem;
 }
 
 #avatar {
-	width: 150px !important;
-	height: 150px !important;
+	width: 9.375rem !important;
+	height: 9.375rem !important;
 }
 
 #avatarContainer {
-	padding: 20px;
+	padding: 1.25rem;
 }
 
 #headerText {
@@ -44,7 +51,7 @@ body {
 
 #username {
 	font-weight: 900;
-	font-size: 35px;
+	font-size: 2.1875rem;
 }
 
 #discrim {
@@ -58,34 +65,32 @@ body {
 }
 
 #headerInfo p {
-	padding-top: 5px;
+	padding-top: 0.3125rem;
 }
 
 #description {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 
-.topGamesHeader {
+.section-header {
 	background: rgb(30, 30, 30);
-	width: var(--bodywidth);
-	margin: 25px auto 25px auto;
-	border-radius: 25px;
+	margin: 1.5625rem auto 1.5625rem auto;
+	border-radius: 1.5625rem;
 }
 
-.topGamesHeader h1 {
-	padding: 25px 25px 5px 25px;
+.section-header h1 {
+	padding: 1.5625rem 1.5625rem 0.3125rem 1.5625rem;
 }
 
-.topGamesHeader p {
-	padding: 0 25px 25px 25px;
+.section-header p {
+	padding: 0 1.5625rem 1.5625rem 1.5625rem;
 }
 
 .hovereffect {
 	text-decoration: none;
 	font-weight: inherit;
 	color: inherit;
-	transition: 300ms;
 	position: relative;
 	overflow: hidden;
 	background: linear-gradient(
@@ -127,9 +132,9 @@ body {
 	background: rgb(var(--pulsecolor));
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	margin: 10px;
-	height: 20px;
-	width: 20px;
+	margin: 0.625rem;
+	height: 1.25rem;
+	width: 1.25rem;
 	transform: scale(1);
 	animation: pulse 2s infinite;
 }
@@ -142,7 +147,7 @@ body {
 
 	70% {
 		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(var(--pulsecolor), 0);
+		box-shadow: 0 0 0 0.625rem rgba(var(--pulsecolor), 0);
 	}
 
 	100% {
@@ -167,8 +172,6 @@ body {
 }
 
 .games {
-	width: var(--bodywidth);
-
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
@@ -178,28 +181,28 @@ body {
 .game:before {
 	content: "";
 	z-index: -1;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+	-webkit-filter: blur(0.3125rem);
+	-moz-filter: blur(0.3125rem);
+	-o-filter: blur(0.3125rem);
+	-ms-filter: blur(0.3125rem);
+	filter: blur(0.3125rem);
 }
 
 .game {
 	width: 50%;
 	position: relative;
-	height: 150px;
-	margin-bottom: 10px;
+	height: 9.375rem;
+	margin-bottom: 0.625rem;
 }
 
 .gameInner {
-	margin: 5px;
+	margin: 0.3125rem;
 	height: 100%;
-	border-radius: 25px;
+	border-radius: 1.5625rem;
 }
 
 .savingContainer {
-	margin: -10px;
+	margin: -0.625rem;
 	height: 100%;
 	vertical-align: middle;
 	display: flex;
@@ -208,61 +211,59 @@ body {
 }
 
 .saving {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 
 .hoursDiv {
 	display: flex;
 	align-items: baseline;
-	margin-bottom: -2px;
+	margin-bottom: -0.125rem;
 }
 
 .gameHours {
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: 800;
-	text-shadow: 0 0 4px black;
+	text-shadow: 0 0 0.25rem black;
 }
 
 .hoursDiv h3 {
-	font-size: 14px;
-	padding-left: 5px;
-	text-shadow: 0 0 4px black;
+	font-size: 0.875rem;
+	padding-left: 0.3125rem;
+	text-shadow: 0 0 0.25rem black;
 }
 
 .gameHeader {
 	position: absolute;
 	bottom: 0;
-	margin: 5px;
-	margin-bottom: -5px;
-	margin-left: 10px;
+	margin: 0.3125rem;
+	margin-bottom: -0.3125rem;
+	margin-left: 0.625rem;
 }
 
 .gameHeader img {
-	max-height: 200px;
-	width: 200px;
+	max-height: 12.5rem;
+	width: 12.5rem;
 	display: static;
 	object-fit: cover;
 }
 
 .gameHeader div h1 {
-	font-size: 15px;
-	text-shadow: 0 0 2px black;
-	margin-bottom: 10px;
+	font-size: 0.9375rem;
+	text-shadow: 0 0 0.125rem black;
+	margin-bottom: 0.625rem;
 }
 
 .socials {
-	width: var(--bodywidth);
 	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
 }
 
 .socials div {
-	height: 100px;
-	width: 50%;
+	height: 6.25rem;
 	position: relative;
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 }
 
 .socials div a {
@@ -271,8 +272,7 @@ body {
 
 .socials div a div {
 	background: var(--divcolor);
-	border-radius: 25px;
-	margin: 5px;
+	border-radius: 1.5625rem;
 	width: auto;
 	display: flex;
 	color: white;
@@ -280,12 +280,11 @@ body {
 }
 
 .socials div a div img {
-	width: 40px;
-	height: 40px;
+	width: 2.5rem;
 	color: white;
 
 	height: 100%;
-	margin: auto 50px auto 50px;
+	margin: auto 3.125rem auto 3.125rem;
 }
 
 .socials div a div h1 {
@@ -294,26 +293,29 @@ body {
 	flex-direction: column;
 	justify-content: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
+	.content {
+		width: 90%;
+	}
 	#avatar {
-		width: 120px !important;
-		height: 120px !important;
+		width: 7.5rem !important;
+		height: 7.5rem !important;
+	}
+	.socials {
+		grid-template-columns: 1fr;
 	}
 	.socials div a div h1 {
-		font-size: 22px;
+		font-size: 1.375rem;
 	}
 	.socials div a div img {
-		margin: auto 10px auto 10px;
-		height: 30px;
-		width: 30px;
-	}
-	:root {
-		--bodywidth: 90%;
+		margin: auto 0.625rem auto 0.625rem;
+		height: 1.875rem;
+		width: 1.875rem;
 	}
 
 	.game {
 		width: 25%;
-		height: 100px;
+		height: 6.25rem;
 	}
 
 	.gameHeader h1 {
@@ -325,11 +327,11 @@ body {
 	}
 
 	.hoursDiv h3 {
-		margin-bottom: 10px;
+		margin-bottom: 0.625rem;
 	}
 
 	.hoursDiv p {
-		font-size: 25px;
+		font-size: 1.5625rem;
 	}
 
 	#headerText {
@@ -338,7 +340,7 @@ body {
 
 	.onlineBox {
 		flex-wrap: wrap;
-		margin-bottom: 5px;
+		margin-bottom: 0.3125rem;
 	}
 
 	#status {
@@ -347,7 +349,7 @@ body {
 	}
 
 	.header {
-		margin: 25px auto 25px auto;
+		margin: 1.5625rem auto 1.5625rem auto;
 	}
 }
 
@@ -418,8 +420,8 @@ body {
 
 .footer {
 	background: rgb(31, 31, 31);
-	margin-top: 20px;
-	height: 80px;
+	margin-top: 1.25rem;
+	height: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -429,7 +431,7 @@ body {
 .footer a {
 	color: white;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: 500;
 }
 
