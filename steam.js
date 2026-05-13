@@ -36,10 +36,10 @@ gamesDiv = document.getElementById("games");
                 
             </div>`
 	}
+	
 
-loadJSON("https://api.glymps.jackbailey.uk/top" + gamestoList + "games", function(data) {
+loadJSON("https://api.jackbailey.uk/steam/76561198363384787x8", function(data) {
 
-	console.log(data)
 	games = data;
 	gamesDiv.innerHTML = "";
 	

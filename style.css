@@ -1,131 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-:root{
-    --divcolor: rgb(30,30,30);
-    --bgcolor: rgb(19,19,19);
-    --bodywidth: 60%;
-
+:root {
+	--divcolor: rgb(30, 30, 30);
+	--bgcolor: rgb(19, 19, 19);
+	--bodywidth: 60%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	color: white;
 }
 
-body{
-    background: var(--bgcolor)
+body {
+	background: var(--bgcolor);
 }
 
-.header{
-    background: var(--divcolor);
-    width: var(--bodywidth);
-    margin: 50px auto 25px auto;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    position: relative;
+.header {
+	background: var(--divcolor);
+	width: var(--bodywidth);
+	margin: 50px auto 25px auto;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	position: relative;
 }
 
-
-#avatar{
-    width: 150px !important;
-    height: 150px !important;
+#avatar {
+	width: 150px !important;
+	height: 150px !important;
 }
 
-#avatarContainer{
-    padding: 20px;
+#avatarContainer {
+	padding: 20px;
 }
 
-#headerText{
-    display: flex;
-    align-items:baseline;
-    height: max-content;
-
+#headerText {
+	display: flex;
+	align-items: baseline;
+	height: max-content;
 }
 
-#username{
-    font-weight: 900;
-    font-size: 35px;
+#username {
+	font-weight: 900;
+	font-size: 35px;
 }
 
-#discrim{
-    color: gray;
-    font-weight: 800;
+#discrim {
+	color: gray;
+	font-weight: 800;
 }
 
-#headerInfo{
-    width: max-content;
-    max-width: 100%;
+#headerInfo {
+	width: max-content;
+	max-width: 100%;
 }
 
-#headerInfo p{
-    padding-top: 5px;
-    
-
+#headerInfo p {
+	padding-top: 5px;
 }
 
-#description{
-    display: block;
-    margin-bottom: 20px;
+#description {
+	display: block;
+	margin-bottom: 20px;
 }
 
-.topGamesHeader{
-    background: rgb(30,30,30);
-    width: var(--bodywidth);
-    margin: 25px auto 25px auto;
-    border-radius: 25px;
+.topGamesHeader {
+	background: rgb(30, 30, 30);
+	width: var(--bodywidth);
+	margin: 25px auto 25px auto;
+	border-radius: 25px;
 }
 
-.topGamesHeader h1{
-    padding: 25px 25px 5px 25px;
+.topGamesHeader h1 {
+	padding: 25px 25px 5px 25px;
 }
 
-.topGamesHeader p{
-    padding: 0 25px 25px 25px;
+.topGamesHeader p {
+	padding: 0 25px 25px 25px;
 }
 
-.hovereffect{
-    text-decoration:none;
-    font-weight: inherit;
-    color: inherit;
-    transition: 300ms;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(to right, rgb(235, 15, 228), dodgerblue 50%, white 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
+.hovereffect {
+	text-decoration: none;
+	font-weight: inherit;
+	color: inherit;
+	transition: 300ms;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(
+		to right,
+		rgb(235, 15, 228),
+		dodgerblue 50%,
+		white 50%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 275ms ease;
 }
 
-
-.hovereffect:hover{
-    background-position: 0 100%;
+.hovereffect:hover {
+	background-position: 0 100%;
 }
 
-.onlineBox{
-    width:auto;
-    position: relative;
-    display: flex;
+.onlineBox {
+	width: auto;
+	position: relative;
+	display: flex;
 
-    vertical-align: middle;
-    align-items: center;
-    flex-wrap: wrap;
-    
+	vertical-align: middle;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-.onlineBox p{
-    font-weight: normal;
-    cursor: pointer;
-    float: left;
+.onlineBox p {
+	font-weight: normal;
+	cursor: pointer;
+	float: left;
 }
 
 .blob {
-    --pulsecolor: #000;
+	--pulsecolor: #000;
 	background: rgb(var(--pulsecolor));
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
@@ -133,7 +131,7 @@ body{
 	height: 20px;
 	width: 20px;
 	transform: scale(1);
-    animation: pulse 2s infinite;
+	animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -141,312 +139,300 @@ body{
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(var(--pulsecolor), 0.7);
 	}
-	
+
 	70% {
 		transform: scale(1);
 		box-shadow: 0 0 0 10px rgba(var(--pulsecolor), 0);
 	}
-	
+
 	100% {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(var(--pulsecolor), 0);
 	}
 }
 
-.blob.green{
-    --pulsecolor: 0,255,0;
+.blob.green {
+	--pulsecolor: 0, 255, 0;
 }
 
-.blob.red{
-    --pulsecolor: 255,0,0;
+.blob.red {
+	--pulsecolor: 255, 0, 0;
 }
-.blob.orange{
-    --pulsecolor: 255,165,0;
-}
-
-.blob.gray{
-    --pulsecolor: 128,128,128;
+.blob.orange {
+	--pulsecolor: 255, 165, 0;
 }
 
-
-.games{
-    width: var(--bodywidth);
-
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.blob.gray {
+	--pulsecolor: 128, 128, 128;
 }
 
-.game:before{
-    content: "";
-    z-index: -1;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+.games {
+	width: var(--bodywidth);
+
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.game{
-    
-    
-    width: 50%;
-    position: relative;
-    height: 150px; 
-    margin-bottom: 10px; 
+.game:before {
+	content: "";
+	z-index: -1;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
 }
 
-.gameInner{
-    margin: 5px;
-    height: 100%;
-    border-radius: 25px;
-
+.game {
+	width: 50%;
+	position: relative;
+	height: 150px;
+	margin-bottom: 10px;
 }
 
-.savingContainer{
-    margin: -10px;
-    height: 100%;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.gameInner {
+	margin: 5px;
+	height: 100%;
+	border-radius: 25px;
 }
 
-.saving{
-    font-size: 40px;
+.savingContainer {
+	margin: -10px;
+	height: 100%;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.hoursDiv{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: -2px;
-    
+.saving {
+	font-size: 40px;
 }
 
-.gameHours{
-    font-size: 40px; 
-    font-weight: 800;
-    text-shadow: 0 0 4px black;
+.hoursDiv {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: -2px;
 }
 
-.hoursDiv h3{
-    font-size: 14px;
-    padding-left: 5px;
-    text-shadow: 0 0 4px black;
+.gameHours {
+	font-size: 40px;
+	font-weight: 800;
+	text-shadow: 0 0 4px black;
 }
 
-.gameHeader{
-    position: absolute;
-    bottom: 0;
-    margin: 5px;
-    margin-bottom: -5px;
-    margin-left: 10px;
+.hoursDiv h3 {
+	font-size: 14px;
+	padding-left: 5px;
+	text-shadow: 0 0 4px black;
 }
 
-.gameHeader img{
-    max-height: 200px;
-    width: 200px;
-    display: static;
-    object-fit: cover;
+.gameHeader {
+	position: absolute;
+	bottom: 0;
+	margin: 5px;
+	margin-bottom: -5px;
+	margin-left: 10px;
 }
 
-.gameHeader div h1{
-    font-size: 15px;
-    text-shadow: 0 0 2px black;
+.gameHeader img {
+	max-height: 200px;
+	width: 200px;
+	display: static;
+	object-fit: cover;
 }
 
-.socials{
-    width: var(--bodywidth);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.gameHeader div h1 {
+	font-size: 15px;
+	text-shadow: 0 0 2px black;
+	margin-bottom: 10px;
 }
 
-.socials div{
-    
-    
-    height: 100px;
-    width: 50%;
-    position: relative;
-    margin-bottom: 10px;
+.socials {
+	width: var(--bodywidth);
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.socials div a{
-    text-decoration: none;
-
+.socials div {
+	height: 100px;
+	width: 50%;
+	position: relative;
+	margin-bottom: 10px;
 }
 
-.socials div a div{
-    background: var(--divcolor);
-    border-radius: 25px;
-    margin: 5px;
-    width: auto;
-    display: flex;
-    color: white;
-    text-decoration: none;
+.socials div a {
+	text-decoration: none;
 }
 
-.socials div a div img{
-    width: 40px;
-    height: 40px;
-    color: white;
-    
-    height: 100%;
-    margin: auto 50px auto 50px;
+.socials div a div {
+	background: var(--divcolor);
+	border-radius: 25px;
+	margin: 5px;
+	width: auto;
+	display: flex;
+	color: white;
+	text-decoration: none;
 }
 
-.socials div a div h1{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.socials div a div img {
+	width: 40px;
+	height: 40px;
+	color: white;
 
+	height: 100%;
+	margin: auto 50px auto 50px;
 }
-@media screen and (max-width: 1000px){
-    #avatar{
-        width: 120px !important;
-        height: 120px !important;
-    }
-    .socials div a div h1{
-        font-size: 22px;
-    }
-    .socials div a div img{
-        margin: auto 10px auto 10px;
-        height: 30px;
-        width: 30px;
-    }
-    :root{
-        --bodywidth: 90%;
 
-    }
+.socials div a div h1 {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+	#avatar {
+		width: 120px !important;
+		height: 120px !important;
+	}
+	.socials div a div h1 {
+		font-size: 22px;
+	}
+	.socials div a div img {
+		margin: auto 10px auto 10px;
+		height: 30px;
+		width: 30px;
+	}
+	:root {
+		--bodywidth: 90%;
+	}
 
-    .game{
-        width: 25%;
-        height: 100px
+	.game {
+		width: 25%;
+		height: 100px;
+	}
 
-    }
+	.gameHeader h1 {
+		display: none;
+	}
 
-    .gameHeader h1{
-        display: none;
-    }
+	.hoursDiv {
+		display: block;
+	}
 
-    .hoursDiv{
-        display: block;
-    }
+	.hoursDiv h3 {
+		margin-bottom: 10px;
+	}
 
-    .hoursDiv h3{
-        margin-bottom: 10px;
-    }
+	.hoursDiv p {
+		font-size: 25px;
+	}
 
-    .hoursDiv p{
-        font-size: 25px;
-    }
+	#headerText {
+		flex-direction: column;
+	}
 
-    #headerText{
-        flex-direction: column;
-    }
+	.onlineBox {
+		flex-wrap: wrap;
+		margin-bottom: 5px;
+	}
 
-    .onlineBox{
-        flex-wrap: wrap;
-        margin-bottom: 5px;
-    }
+	#status {
+		display: block;
+		word-break: break-word;
+	}
 
-    #status{
-        display: block;
-        word-break: break-word;
-  
-    }
-
-    .header{
-        margin: 25px auto 25px auto;
-    }
+	.header {
+		margin: 25px auto 25px auto;
+	}
 }
 
 @keyframes blink {
-    /**
+	/**
      * At the start of the animation the dot
      * has an opacity of .2
      */
-    0% {
-      opacity: .2;
-    }
-    /**
+	0% {
+		opacity: 0.2;
+	}
+	/**
      * At 20% the dot is fully visible and
      * then fades out slowly
      */
-    20% {
-      opacity: 1;
-    }
-    /**
+	20% {
+		opacity: 1;
+	}
+	/**
      * Until it reaches an opacity of .2 and
      * the animation can start again
      */
-    100% {
-      opacity: .2;
-    }
+	100% {
+		opacity: 0.2;
+	}
 }
 
 .saving span {
-    /**
+	/**
      * Use the blink animation, which is defined above
      */
-    animation-name: blink;
-    /**
+	animation-name: blink;
+	/**
      * The animation should take 1.4 seconds
      */
-    animation-duration: 1.4s;
-    /**
+	animation-duration: 1.4s;
+	/**
      * It will repeat itself forever
      */
-    animation-iteration-count: infinite;
-    /**
+	animation-iteration-count: infinite;
+	/**
      * This makes sure that the starting style (opacity: .2)
      * of the animation is applied before the animation starts.
      * Otherwise we would see a short flash or would have
      * to set the default styling of the dots to the same
      * as the animation. Same applies for the ending styles.
      */
-    animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 
 .saving span:nth-child(2) {
-    /**
+	/**
      * Starts the animation of the third dot
      * with a delay of .2s, otherwise all dots
      * would animate at the same time
      */
-    animation-delay: .2s;
+	animation-delay: 0.2s;
 }
 
 .saving span:nth-child(3) {
-    /**
+	/**
      * Starts the animation of the third dot
      * with a delay of .4s, otherwise all dots
      * would animate at the same time
      */
-    animation-delay: .4s;
+	animation-delay: 0.4s;
 }
 
-.footer{
-    background: rgb(31, 31, 31);
-    margin-top: 20px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.footer {
+	background: rgb(31, 31, 31);
+	margin-top: 20px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
-.footer a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
+.footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 500;
 }
 
-.footer a a{
-    font-weight: 500;
+.footer a a {
+	font-weight: 500;
 }
