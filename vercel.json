@@ -4,6 +4,11 @@
 			"source": "/mods",
 			"destination": "https://cloud.bilson.io/s/tCBJpsNkHzCpyqj",
 			"permanent": false
+		},
+		{
+			"source": "/discord",
+			"destination": "https://discord.gg/wmY6QzYpqU",
+			"permanent": false
 		}
 	],
 	"rewrites": [
