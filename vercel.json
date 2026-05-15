@@ -1,4 +1,11 @@
 {
+	"redirects": [
+		{
+			"source": "/mods",
+			"destination": "https://cloud.bilson.io/s/tCBJpsNkHzCpyqj",
+			"permanent": false
+		}
+	],
 	"rewrites": [
 		{ "source": "/", "destination": "/" }
 	]
